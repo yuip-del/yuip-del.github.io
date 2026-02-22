@@ -1,7 +1,29 @@
-echo "# yuip-del.github.io" >> README.md 
-git init 
-git add README.md 
-git commit -m "最初のコミット" 
-git branch -M main 
-git remote add origin https://github.com/yuip-del/yuip-del.github.io.git
- git push -u origin main
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Animation</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    video {
+      width: 100%;
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay loop muted playsinline controls>
+    <source src="Replay_animation.mp4" type="video/mp4">
+    お使いのブラウザは動画タグに対応していません。
+  </video>
+
+</body>
+</html>
